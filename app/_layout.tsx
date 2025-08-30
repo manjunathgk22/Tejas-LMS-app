@@ -25,7 +25,7 @@ export default function RootLayout() {
       <StatusBar style="auto" />
       <WebView
       style={styles.container}
-      source={{ uri: 'http://45.130.164.151:3000/' }}
+      source={{ uri: 'http://192.168.0.21/' }}
       originWhitelist={['*']}
       sharedCookiesEnabled={true}
       domStorageEnabled={true}
