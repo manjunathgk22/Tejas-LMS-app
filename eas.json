@@ -1,0 +1,36 @@
+{
+  "cli": {
+    "version": ">= 16.17.4",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk",
+        "env": {
+          "ANDROID_NDK_VERSION": "25.1.8937393"
+        }
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "android": {
+        "buildType": "apk",
+        "env": {
+          "ANDROID_NDK_VERSION": "25.1.8937393"
+        }
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
